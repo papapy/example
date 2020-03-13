@@ -14,5 +14,4 @@ public class ExampleEurekaApplication {
     public static void main(String[] args) {
         SpringApplication.run(ExampleEurekaApplication.class, args);
     }
-
 }

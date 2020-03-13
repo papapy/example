@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="bodyWidth">
+    <iframe id="test"></iframe>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        (function () {
+            // document.cookie = "smartquery.SESSION_ID=bff896aa-8049-4c1a-9180-1be4661ca8a9";
+            // document.getElementById('test').src = 'http://fr.ur.com.cn:3000';
+            $.ajax({
+                url: "http://fr.ur.com.cn:3000/api/session",
+                type: "post",
+                data: "{\"username\": \"jaden.zhang@analyticservice.net\", \"password\": \"1qaz@WSX\"}",
+                contentType: "application/json",
+                success: function (d) {
+                    console.info(d);
+                }
+            });
+        })();
+    </script>
+</div>
+</body>
+</html>

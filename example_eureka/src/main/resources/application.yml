@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: eureka_center
+  security:
+    user:
+      name: eureka
+      password: 123456
 eureka:
   client:
     # 是否注册服务,默认true.不需要对外提供服务的可配置为false
@@ -17,5 +21,8 @@ eureka:
     lease-renewal-interval-in-seconds: 2
     # 获取服务注册持续时间,默认90s,超时获取不到会读服务缓存
     lease-expiration-duration-in-seconds: 4
+  server:
+    # 自我保护模式
+    enable-self-preservation: false
 
 
